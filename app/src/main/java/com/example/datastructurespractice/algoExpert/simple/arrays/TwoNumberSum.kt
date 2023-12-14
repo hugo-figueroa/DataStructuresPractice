@@ -22,6 +22,7 @@ fun main(args: Array<String>) {
     print(twoNumberSum(mutableListOf<Int>(3, 5, -4, 8, 11, 1, -1, 6), 10).toString())
 }
 
+// O(n) Time | O(n) Space
 fun twoNumberSum(array: MutableList<Int>, targetSum: Int): List<Int> {
     val seenNumbers = mutableSetOf<Int>()
     for (num in array) {
