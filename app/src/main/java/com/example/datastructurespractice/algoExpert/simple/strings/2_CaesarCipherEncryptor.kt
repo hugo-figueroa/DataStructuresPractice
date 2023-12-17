@@ -17,14 +17,15 @@ fun main(args: Array<String>) {
     print(caesarCipherEncryptor("xyz", 2))
 }
 
+// O(n) Time | O(n) Space
 fun caesarCipherEncryptor(string: String, key: Int): String {
-    var newLetters = ""
+    var newLetters = arrayListOf<String>()
     val newKey = key % 26
     val alphabet = arrayOf("a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z")
     for (letter in string) {
-        newLetters += getNewLetter(letter.toString(), newKey, alphabet)
+        newLetters.add(getNewLetter(letter.toString(), newKey, alphabet))
     }
-    return newLetters
+    return newLetters.joinToString(separator = "")
 }
 
 fun getNewLetter(letter: String, key: Int, alphabet: Array<String>): String {
