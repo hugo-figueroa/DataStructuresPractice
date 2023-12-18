@@ -62,6 +62,7 @@ class Node(name: String) {
     private val name: String = name
     val children = mutableListOf<Node>()
 
+    // O(v + e) Time | O(v) Space
     fun depthFirstSearch(array: MutableList<String>): List<String> {
         array.add(this.name)
         for (child in this.children) {
