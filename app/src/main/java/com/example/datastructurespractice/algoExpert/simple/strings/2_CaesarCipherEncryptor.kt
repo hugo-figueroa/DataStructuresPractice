@@ -10,7 +10,7 @@ package com.example.datastructurespractice.algoExpert.simple.strings
  * Note that letters should "wrap" around the alphabet; in other words, the
  * letter shifted by one returns the letter.
  *
- * @author (c) 2023,
+ * @author (c) 2023, Hugo Figueroa
  * */
 
 fun main(args: Array<String>) {

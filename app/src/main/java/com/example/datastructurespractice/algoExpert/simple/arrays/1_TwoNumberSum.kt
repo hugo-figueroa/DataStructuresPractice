@@ -16,7 +16,7 @@ package com.example.datastructurespractice.algoExpert.simple.arrays
  * You can assume that there will be at most one pair of numbers summing up to
  * the target sum.
  *
- * @author (c) 2023,
+ * @author (c) 2023, Hugo Figueroa
  * */
 fun main(args: Array<String>) {
     print(twoNumberSum(mutableListOf<Int>(3, 5, -4, 8, 11, 1, -1, 6), 10).toString())
